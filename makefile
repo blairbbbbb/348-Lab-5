@@ -1,13 +1,13 @@
-all: problemOne #problemTwo
+all: problemOne problemTwo
 
 # Compile programone
 problemOne: problemOne.c
 	gcc problemOne.c -o problemOne
 
 # Compile programtwo
-#problemTwo: problemTwo.c
-#	cc -o problemTwo.c -o problemTwo
+problemTwo: problemTwo.c
+	gcc problemTwo.c -o problemTwo
 
 # Clean build files
 clean:
-	rm -f problemOne problemTwo
+	rm -f problemOne problemTwo *.o
